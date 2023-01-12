@@ -4,8 +4,10 @@
   @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
 
   html {
+    font-family: Fraunces, Georgia, serif;
+    font-variation-settings: 'OPSZ' 16, 'SOFT' 0, 'WONK' 0, 'WGHT' 400;
+    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
   }
 <style>
