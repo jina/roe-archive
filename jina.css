@@ -2,6 +2,7 @@
 
 ::root {
   --background-image: url("jina/noise.png");
+  --background-repeat: repeat;
 
   --font-family: Fraunces, serif;
 }
