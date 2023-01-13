@@ -1,18 +1,18 @@
 :root {
-  --white:     #fff;
-  --grey-50:   #f9fafb;
-  --grey-100:  #f3f4f6;
-  --grey-200:  #e5e7eb;
-  --grey-300:  #d1d5db;
-  --grey-400:  #9ca3af;
-  --grey-500:  #6b7280;
-  --grey-600:  #4b5563;
-  --grey-700:  #374151;
-  --grey-800:  #1f2937;
-  --grey-900:  #111827;
-  --black:     #000;
-  --white-050: rgb(255 255 255 / 50%);
-  --black-050: rgb(0   0   0   / 50%);
+  --white:      #fff;
+  --grey-0:     #f9fafb;
+  --grey-1:     #f3f4f6;
+  --grey-2:     #e5e7eb;
+  --grey-3:     #d1d5db;
+  --grey-4:     #9ca3af;
+  --grey-5:     #6b7280;
+  --grey-6:     #4b5563;
+  --grey-7:     #374151;
+  --grey-8:     #1f2937;
+  --grey-9:     #111827;
+  --black:      #000;
+  --white-half: rgb(255 255 255 / 50%);
+  --black-half: rgb(0   0   0   / 50%);  
 
   --font-family:         sans-serif;
   --font-family-display: var(--font-family);
@@ -34,6 +34,7 @@
 }
 
 html {
+  background-color: var(--background-color);
   font-size: 100%;
   line-height: 1.5;
   font-family: var(--font-family);
@@ -47,4 +48,19 @@ body {
 
 h2 {
   font-family: var(--font-family-display);
+}
+
+@media (prefers-color-scheme: light) {
+  --background-color: var(--white);
+}
+
+@media (prefers-color-scheme: light) and (prefers-contrast: more) {
+}
+
+@media (prefers-color-scheme: dark) {
+  --background-color: var(--grey-9);
+}
+
+@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+  --background-color: var(--black);
 }
