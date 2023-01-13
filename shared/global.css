@@ -62,6 +62,10 @@ body {
   text-shadow: none;
 }
 
+strong {
+  font-weight: bolder;
+}
+
 h2 {
   font-family: var(--font-family-display);
 }
