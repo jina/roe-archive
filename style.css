@@ -157,11 +157,10 @@
     font-variation-settings: "opsz" 16;
   }
 
-
-
-  /* ---------------------------------------------------------------------------
-   * Lists
-   */
+  p,
+  li {
+    line-height: 1.75;
+  }
 
   ul,
   ol {
@@ -477,10 +476,6 @@
       content: "";
     }
 
-    abbr[title]::after {
-      content: " (" attr(title) ")";
-    }
-
     h1,
     h2,
     h3,
@@ -497,25 +492,15 @@
     h3,
     h4,
     h5,
-    h6,
-    dt,
-    caption,
-    legend {
+    h6 {
       page-break-after: avoid;
     }
 
-    pre {
-      white-space: pre-wrap !important;
-    }
-
-    pre,
     blockquote,
-    tr,
     img {
       page-break-inside: avoid;
     }
 
-    pre,
     blockquote {
       border: 1px solid #999;
     }
