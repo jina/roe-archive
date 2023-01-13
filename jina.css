@@ -1,7 +1,7 @@
-@import url('assets/css/webflow.css');
+@import url('shared/global.css');
 
 ::root {
-  --background-image: url("assets/img/jina/noise.png");
+  --background-image: url("jina/noise.png");
 
   --font-family: Fraunces, serif;
 }
