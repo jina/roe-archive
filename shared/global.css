@@ -19,7 +19,7 @@ html {
   background-repeat: var(--background-repeat);
   font-size: 100%;
   line-height: 1.5;
-  font-family: var(--html-font-family);
+  font-family: var(--font-family);
   font-optical-sizing: auto;
   text-rendering: optimizeLegibility;
   vertical-align: baseline;
