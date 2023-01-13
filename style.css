@@ -222,6 +222,10 @@
     outline: 1px dotted ButtonText;
   }
 
+  .feature-image {
+    aspect-ratio: 16 / 9;
+  }
+
   .hidden,
   [hidden] {
     display: none !important;
