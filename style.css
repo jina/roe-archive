@@ -1,7 +1,17 @@
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,WONK@0,9..144,400,0;0,9..144,600,0;1,9..144,400,0;1,9..144,400,1;1,9..144,600,0&display=swap');
 
+  /* ---------------------------------------------------------------------------
+   * Imports
+   */
+
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,WONK@0,9..144,400,0;0,9..144,600,0;1,9..144,400,0;1,9..144,400,1;1,9..144,600,0&display=swap');
   @import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+
+
+  /* ---------------------------------------------------------------------------
+   * Root
+   */
 
   *,
   ::before,
@@ -19,8 +29,9 @@
   }
 
   html {
-    font: normal 400 100%/1.5 Fraunces, Georgia, serif;
+    font: normal normal 100%/1.5 Fraunces, Georgia, serif;
     font-optical-sizing: auto;
+    font-variation-settings: "opsz" 16, "SOFT" 0, "WONK" 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
@@ -34,18 +45,13 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  body {
-    overflow-x: hidden;
-  }
-
-  html,
-  h6,
-  .h6 {
-    font-variation-settings: "opsz" 16, "SOFT" 0, "WONK" 0;
-  }
-
   html:focus-within {
     scroll-behavior: smooth;
+  }
+
+  body {
+    overflow-x: hidden;
+    font-size: 1rem;
   }
 
   ::-moz-selection {
@@ -58,79 +64,87 @@
     text-shadow: none;
   }
 
-  a {
-    text-decoration-skip-ink: auto;
-  }
 
-  b,
+
+  /* ---------------------------------------------------------------------------
+   * Inline Text
+   */
+
   strong {
     font-weight: bolder;
   }
 
-  code,
-  kbd,
-  samp,
-  pre {
-    font-family: monospace, monospace;
-  }
-
-  small {
-    font-size: 80%;
-  }
-
-  sub,
-  sup {
-    position: relative;
-    font-size: 75%;
-    line-height: 0;
-  }
-
-  sub {
-    bottom: -0.25em;
-  }
-
-  sup {
-    top: -0.5em;
-  }
-
-  details,
-  main,
-  hr {
-    display: block;
-  }
-
-  h1,
-  .h1 {
-    font-variation-settings: "opsz" 48, "SOFT" 0, "WONK" 0;
-  }
-
-  h2,
-  .h2 {
-    font-variation-settings: "opsz" 36, "SOFT" 0, "WONK" 0;
-  }
-
-  h3,
-  .h3 {
-    font-variation-settings: "opsz" 24, "SOFT" 0, "WONK" 0;
-  }
-
-  h4,
-  .h4 {
-    font-variation-settings: "opsz" 20, "SOFT" 0, "WONK" 0;
-  }
-
-  h5,
-  .h5 {
-    font-variation-settings: "opsz" 18, "SOFT" 0, "WONK" 0;
-  }
-
-  blockquote,
   .brand {
     font-variation-settings: "opsz" 24, "SOFT" 0, "WONK" 1;
   }
 
+
+
+  /* ---------------------------------------------------------------------------
+   * Links
+   */
+
+  a {
+    text-decoration-skip-ink: auto;
+  }
+
+  .link-button,
+  .link-button-wrap {
+    display: inline-flex;
+  }
+
+  .w--current {
+    pointer-events: none;
+  }
+
+
+
+  /* ---------------------------------------------------------------------------
+   * Block Text
+   */
+
+
+  main {
+    display: block;
+  }
+
+  h1 {
+    font-variation-settings: "opsz" 48;
+  }
+
+  h2 {
+    font-variation-settings: "opsz" 36;
+  }
+
+  h3,
+  .h3 {
+    font-variation-settings: "opsz" 24;
+  }
+
+  h4,
+  .h4 {
+    font-variation-settings: "opsz" 20;
+  }
+
+  h5,
+  blockquote,
+  .h5 {
+    font-variation-settings: "opsz" 18;
+  }
+
+  h6,
+  .h6 {
+    font-variation-settings: "opsz" 16;
+  }
+
+
+
+  /* ---------------------------------------------------------------------------
+   * Lists
+   */
+
   ul,
-  li {
+  ol {
     list-style: none;
   }
 
@@ -139,68 +153,59 @@
     content: "\200B";
   }
 
-  summary {
-    display: list-item;
-  }
 
-  pre {
-    overflow: auto;
-  }
+
+  /* ---------------------------------------------------------------------------
+   * Media
+   */
 
   figure {
     display: flex !important;
   }
 
-  audio,
-  canvas,
-  iframe,
-  img,
-  svg,
-  video {
+  img {
+    max-width: 100%;
+    height: auto;
     vertical-align: middle;
   }
 
-  iframe, 
-  img,
+  .icon {
+    display: inline-flex;
+  }
+
+  .feature-image {
+    aspect-ratio: 16 / 9;
+  }
+
+  .material-symbols-sharp {
+    font-size: inherit;
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+
+  .jumbo .material-symbols-sharp {
+    font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 320;    
+  }
+
+  .page-previous .arrow-right,
+	.page-next .arrow-left {
+    display: none;
+  }
+
+
+
+  /* ---------------------------------------------------------------------------
+   * Forms
+   */
+
   input,
-  video,
-  select,
   textarea {
     max-width: 100%;
     height: auto;
   }
 
-  svg:not([fill]) {
-    fill: currentColor;
-  }
-
-  hr,
   input,
   button {
     overflow: visible;
-  }
-
-  select,
-  button {
-    text-transform: none;
-  }
-
-  hr {
-    box-sizing: content-box;
-    margin: 1.5em 0;
-    border-top: 1px solid #ccc;
-    height: 0;
-  }
-
-  table {
-    border-collapse: collapse;
-    text-indent: 0;
-  }
-
-  legend {
-    display: table;
-    max-width: 100%;
-    white-space: normal;
   }
 
   textarea {
@@ -214,7 +219,9 @@
   }
 
   button {
+    display: inline-flex;
     -webkit-appearance: button;
+    text-transform: none;
   }
 
   button::-moz-focus-inner {
@@ -226,23 +233,28 @@
     outline: 1px dotted ButtonText;
   }
 
-  .button,
-  .button-stateful,
-  .icon {
-    display: inline-flex;
+
+
+  /* ---------------------------------------------------------------------------
+   * Webflow Resets
+   */
+
+  .w-richtext:before,
+  .w-richtext:after,
+  .w-embed:before,
+  .w-embed:after {
+    display: none;
   }
 
-  .feature-image {
-    aspect-ratio: 16 / 9;
-  }
+
+
+  /* ---------------------------------------------------------------------------
+   * Visibility
+   */
 
   .hidden,
   [hidden] {
     display: none !important;
-  }
-
-  .w--current {
-    pointer-events: none;
   }
 
   .visually-hidden {
@@ -268,34 +280,43 @@
     white-space: inherit;
   }
 
-  .material-symbols-sharp {
-    font-size: inherit;
-    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  }
 
-  .jumbo .material-symbols-sharp {
-    font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 320;    
-  }
+
+  /* ---------------------------------------------------------------------------
+   * 480px and up
+   */
 
   @media only screen and (min-width: 30em) {
     h1 {
-      font-variation-settings: "opsz" 56, "SOFT" 0, "WONK" 0;
+      font-variation-settings: "opsz" 56;
     }
     
     h2 {
-      font-variation-settings: "opsz" 40, "SOFT" 0, "WONK" 0;
+      font-variation-settings: "opsz" 40;
     }
   }
 
+
+
+  /* ---------------------------------------------------------------------------
+   * 640px and up
+   */
+
   @media only screen and (min-width: 40em) {
     h1 {
-      font-variation-settings: "opsz" 64, "SOFT" 0, "WONK" 0;
+      font-variation-settings: "opsz" 64;
     }
     
     h2 {
-      font-variation-settings: "opsz" 48, "SOFT" 0, "WONK" 0;
+      font-variation-settings: "opsz" 48;
     }
   }
+
+
+
+  /* ---------------------------------------------------------------------------
+   * 960px and up
+   */
   
   @media only screen and (min-width: 60em) {
     h1 {
@@ -303,17 +324,35 @@
     }
   }
 
+
+
+  /* ---------------------------------------------------------------------------
+   * 1280px and up
+   */
+
   @media only screen and (min-width: 80em) {
     h1 {
       font-variation-settings: "opsz" 80, "SOFT" 0, "WONK" 0;
     }
   }
+
+
+
+  /* ---------------------------------------------------------------------------
+   * 1920px and up
+   */
   
   @media only screen and (min-width: 120em) {
     h1 {
       font-variation-settings: "opsz" 96, "SOFT" 0, "WONK" 0;
     }
   }
+
+
+
+  /* ---------------------------------------------------------------------------
+   * Prefers Reduced Motion
+   */
 
   @media (prefers-reduced-motion: reduce) {
     *,
@@ -328,6 +367,12 @@
       transition-duration: 0s !important;
     }
   }
+
+
+
+  /* ---------------------------------------------------------------------------
+   * Print
+   */
 
   @media print {
     *,
