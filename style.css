@@ -33,7 +33,11 @@
     cursor: default;
     -webkit-tap-highlight-color: transparent;
   }
-  
+
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+
   b,
   strong {
     font-weight: bolder;
