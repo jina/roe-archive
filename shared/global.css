@@ -50,6 +50,7 @@
 
 html {
   --html-font-family: var(--font-family);
+
   background-color: var(--background-color);
   background-image: var(--background-image);
   background-repeat: var(--background-repeat);
