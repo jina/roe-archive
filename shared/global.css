@@ -1,32 +1,44 @@
 :root {
-  --white:      #fff;
-  --grey-0:     #f9fafb;
-  --grey-1:     #f3f4f6;
-  --grey-2:     #e5e7eb;
-  --grey-3:     #d1d5db;
-  --grey-4:     #9ca3af;
-  --grey-5:     #6b7280;
-  --grey-6:     #4b5563;
-  --grey-7:     #374151;
-  --grey-8:     #1f2937;
-  --grey-9:     #111827;
-  --black:      #000;
-  --white-half: rgb(255 255 255 / 50%);
-  --black-half: rgb(0   0   0   / 50%);  
+  --black:  #000;
+  --grey-9: #111827;
+  --grey-8: #1f2937;
+  --grey-7: #374151;
+  --grey-6: #4b5563;
+  --grey-5: #6b7280;
+  --grey-4: #9ca3af;
+  --grey-3: #d1d5db;
+  --grey-2: #e5e7eb;
+  --grey-1: #f3f4f6;
+  --grey-0: #f9fafb;
+  --white:  #fff;
+  
+  --transparent:       rgb(0   0   0   / 0% );
+  --transparent-black: rgb(0   0   0   / 50%);
+  --transparent-white: rgb(255 255 255 / 50%);
+
+  --size-1: .0625rem;
+  --size-2: .125rem;
+  --size-negative-1: -0.0625rem;
+  --size-negative-2: -0.125rem;
 
   --background-color: var(--white);
 
   --font-family: sans-serif;
+  --text-color: var(--grey-6);
+  --text-shadow-offset-x:    0;
+  --text-shadow-offset-y:    0;
+  --text-shadow-blur-radius: 0;
+  --text-shadow-color:       var(--transparent);
 }
 
 *,
 ::before,
 ::after {
   box-sizing: border-box;
-  margin: 0;
-  border: 0;
+  margin:  0;
+  border:  0;
   padding: 0;
-  background-color: transparent;
+  background: transparent;
   background-repeat: no-repeat;
   font: inherit;
   vertical-align: inherit;
@@ -41,6 +53,21 @@ html {
   font-size: 100%;
   line-height: 1.5;
   font-family: var(--font-family);
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  vertical-align: baseline;
+  overflow-wrap: break-word;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -moz-tab-size: 4;
+       tab-size: 4;
+  -webkit-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow-offset-x) 
+               var(--text-shadow-offset-y) 
+               var(--text-shadow-blur-radius) 
+               var(--text-shadow-color);
 }
 
 body {
@@ -53,13 +80,31 @@ h2 {
   font-family: var(--font-family-display);
 }
 
-@media (prefers-color-scheme: light) and (prefers-contrast: more) {
+/* @media (prefers-color-scheme: light) {
+}
+
+.theme-light {
 }
 
 @media (prefers-color-scheme: dark) {
+} */
+
+.theme-dark {
   --background-color: var(--grey-9);
+
+  --text-color: var(--grey-3);
 }
 
-@media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+/* @media (prefers-color-scheme: light) and (prefers-contrast: more) {
+} */
+
+.theme-high-contrast {
+  --text-color: var(--black);
+}
+
+/* @media (prefers-color-scheme: dark) and (prefers-contrast: more) {
+} */
+
+.theme-high-contrast-dark {
   --background-color: var(--black);
 }
