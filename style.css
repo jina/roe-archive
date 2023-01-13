@@ -259,6 +259,10 @@
     font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
 
+  .jumbo .material-symbols-sharp {
+    font-variation-settings: 'FILL' 1, 'wght' 100, 'GRAD' 0, 'opsz' 320;    
+  }
+
   @media only screen and (min-width: 30em) {
     h1 {
       font-variation-settings: "opsz" 56, "SOFT" 0, "WONK" 0;
