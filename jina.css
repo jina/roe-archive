@@ -1,13 +1,13 @@
 @import url('shared/global.css');
 
 ::root {
-  --background-image: url("jina/noise.png");
+  --background-image:  url("jina/noise.png");
   --background-repeat: repeat;
 
   --font-family: Fraunces, serif;
   --text-shadow-offset-y:    var(--size-1);
   --text-shadow-blur-radius: var(--size-2);
-  --text-shadow-color: var(--transparent-white);
+  --text-shadow-color:       var(--transparent-white);
 }
 
 .theme-dark {
