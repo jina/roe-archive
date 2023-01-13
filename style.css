@@ -296,6 +296,7 @@
     align-items: baseline;
     justify-content: space-between;
     column-gap: 2rem;
+    row-gap: 1.5rem;
   }
 
 
