@@ -1,7 +1,7 @@
 @import url('shared/tokens.css');
 
 ::root {
-  --font-family: Recursive, sans-serif;
+  --font-family: Recursive;
 }
 
 @import url('shared/global.css');
