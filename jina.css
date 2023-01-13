@@ -1,4 +1,4 @@
-@import url('shared/global.css');
+@import url('shared/tokens.css');
 
 ::root {
   --background-image:  url("jina/noise.png");
@@ -14,3 +14,5 @@
   --text-shadow-offset-y: var(--size-negative-1);
   --text-shadow-color:    var(--transparent-black);
 }
+
+@import url('shared/global.css');
