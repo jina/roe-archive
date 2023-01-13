@@ -1,5 +1,7 @@
 @import url('assets/css/webflow.css');
 
 ::root {
+  --background-image: url("assets/img/jina/noise.png");
+
   --font-family: Fraunces, serif;
 }
