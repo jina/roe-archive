@@ -35,10 +35,6 @@
   --text-shadow-color:       var(--transparent);
 }
 
-html {
-  --html-font-family: var(--font-family);
-}
-
 /* @media (prefers-color-scheme: light) { }
 
 .theme-light { }
