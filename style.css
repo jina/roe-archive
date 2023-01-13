@@ -10,6 +10,7 @@
     margin: 0;
     border: 0;
     padding: 0;
+    background-color: transparent;
     background-repeat: no-repeat;
     font: inherit;
     vertical-align: inherit;
@@ -38,6 +39,16 @@
     scroll-behavior: smooth;
   }
 
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+
+  ::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+  }
+
   a {
     text-decoration-skip-ink: auto;
   }
@@ -58,6 +69,27 @@
     font-size: 80%;
   }
 
+  sub,
+  sup {
+    position: relative;
+    font-size: 75%;
+    line-height: 0;
+  }
+
+  sub {
+    bottom: -0.25em;
+  }
+
+  sup {
+    top: -0.5em;
+  }
+
+  details,
+  main,
+  hr {
+    display: block;
+  }
+
   ul,
   li {
     list-style: none;
@@ -66,6 +98,10 @@
   li::before {
     float: left;
     content: "\200B";
+  }
+
+  summary {
+    display: list-item;
   }
 
   pre {
@@ -95,12 +131,37 @@
     fill: currentColor;
   }
 
+  hr,
+  input,
+  button {
+    overflow: visible;
+  }
+
+  select,
+  button {
+    text-transform: none;
+  }
+
+  hr {
+    box-sizing: content-box;
+    margin: 1.5em 0;
+    border-top: 1px solid #ccc;
+    height: 0;
+  }
+
   table {
     border-collapse: collapse;
     text-indent: 0;
   }
 
+  legend {
+    display: table;
+    max-width: 100%;
+    white-space: normal;
+  }
+
   textarea {
+    overflow: auto;
     resize: vertical;
   }
 
@@ -113,8 +174,45 @@
     -webkit-appearance: button;
   }
 
+  button::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+
+  button:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+
+  .hidden,
+  [hidden] {
+    display: none !important;
+  }
+
   .w--current {
     pointer-events: none;
+  }
+
+  .visually-hidden {
+    position: absolute;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .visually-hidden.focusable:active,
+  .visually-hidden.focusable:focus {
+    position: static;
+    margin: 0;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: inherit;
   }
 
   @media (prefers-reduced-motion: reduce) {
@@ -128,6 +226,74 @@
       scroll-behavior: auto !important;
       transition-delay: 0s !important;
       transition-duration: 0s !important;
+    }
+  }
+
+  @media print {
+    *,
+    ::before,
+    ::after {
+      background: #fff !important;
+      box-shadow: none !important;
+      color: #000 !important;
+      text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
+
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
+
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
+
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      orphans: 3;
+      widows: 3;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    dt,
+    caption,
+    legend {
+      page-break-after: avoid;
+    }
+
+    pre {
+      white-space: pre-wrap !important;
+    }
+
+    pre,
+    blockquote,
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
+
+    pre,
+    blockquote {
+      border: 1px solid #999;
     }
   }
 <style>
