@@ -10,15 +10,112 @@
     margin: 0;
     border: 0;
     padding: 0;
+    background-repeat: no-repeat;
     font: inherit;
+    vertical-align: inherit;
+    text-decoration: inherit;
+    color: inherit;
   }
 
   html {
     font: normal 400 100%/1.5 Fraunces, Georgia, serif;
     font-variation-settings: 'opsz' 16, 'SOFT' 0, 'WONK' 0;
     font-optical-sizing: auto;
-    text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    vertical-align: baseline;
+    overflow-wrap: break-word;
+    -moz-tab-size: 4;
+    tab-size: 4;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    cursor: default;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+
+  code,
+  kbd,
+  samp,
+  pre {
+    font-family: monospace, monospace;
+  }
+
+  small {
+    font-size: 80%;
+  }
+
+  ul,
+  li {
+    list-style: none;
+  }
+
+  li::before {
+    float: left;
+    content: "\200B";
+  }
+
+  pre {
+    overflow: auto;
+  }
+
+  audio,
+  canvas,
+  iframe,
+  img,
+  svg,
+  video {
+    vertical-align: middle;
+  }
+
+  iframe, 
+  img,
+  input,
+  video,
+  select,
+  textarea {
+    max-width: 100%;
+    height: auto;
+  }
+
+  svg:not([fill]) {
+    fill: currentColor;
+  }
+
+  table {
+    border-collapse: collapse;
+    text-indent: 0;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  ::-webkit-input-placeholder {
+    color: inherit;
+    opacity: 0.54;
+  }
+
+  button {
+    -webkit-appearance: button;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-delay: -1ms !important;
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      transition-delay: 0s !important;
+      transition-duration: 0s !important;
+    }
   }
 <style>
