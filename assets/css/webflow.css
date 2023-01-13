@@ -13,7 +13,8 @@
   --black:     #000;
   --white-050: rgb(255 255 255 / 50%);
   --black-050: rgb(0   0   0   / 50%);
-  --font-family: sans-serif;
+
+  --font-family:         sans-serif;
   --font-family-display: var(--font-family);
 }
 
