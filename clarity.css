@@ -1,8 +1,8 @@
 /* @import url('shared/tokens.css');
 
 ::root {
-  --font-family:         Gantari,    sans-serif;
-  --font-family-display: Montserrat, sans-serif;
+  --font-family:         Gantari;
+  --font-family-display: Montserrat;
 }
 
 @import url('shared/global.css'); */
