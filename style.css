@@ -38,6 +38,10 @@
     scroll-behavior: smooth;
   }
 
+  a {
+    text-decoration-skip-ink: auto;
+  }
+
   b,
   strong {
     font-weight: bolder;
