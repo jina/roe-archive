@@ -1,5 +1,5 @@
 /*
-@import url('assets/css/webflow.css');
+@import url('shared/global.css');
 
 ::root {
   --font-family:         Gantari,    sans-serif;
