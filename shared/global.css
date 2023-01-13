@@ -14,8 +14,9 @@
   --white-half: rgb(255 255 255 / 50%);
   --black-half: rgb(0   0   0   / 50%);  
 
-  --font-family:         sans-serif;
-  --font-family-display: var(--font-family);
+  --background-color: var(--white);
+
+  --font-family: sans-serif;
 }
 
 *,
@@ -35,6 +36,7 @@
 
 html {
   background-color: var(--background-color);
+  background-image: var(--background-image);
   font-size: 100%;
   line-height: 1.5;
   font-family: var(--font-family);
@@ -48,10 +50,6 @@ body {
 
 h2 {
   font-family: var(--font-family-display);
-}
-
-@media (prefers-color-scheme: light) {
-  --background-color: var(--white);
 }
 
 @media (prefers-color-scheme: light) and (prefers-contrast: more) {
