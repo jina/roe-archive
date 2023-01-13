@@ -13,18 +13,20 @@
    */
 
   :root {
-    --white:    hsla(0,       0%,     100%,   1);
-    --grey-50:  hsla(210,     20%,    98.04%, 1);
-    --grey-100: hsla(220,     14.29%, 95.88%, 1);
-    --grey-200: hsla(220,     13.04%, 90.98%, 1);
-    --grey-300: hsla(216,     12.2%,  83.92%, 1);
-    --grey-400: hsla(217.895, 10.61%, 64.9%,  1);
-    --grey-500: hsla(220,     8.94%,  46.08%, 1);
-    --grey-600: hsla(215,     13.79%, 34.12%, 1);
-    --grey-700: hsla(216.923, 19.12%, 26.67%, 1);
-    --grey-800: hsla(215,     27.91%, 16.86%, 1);
-    --grey-900: hsla(220.909, 39.29%, 10.98%, 1);
-    --black:    hsla(0,       100%,   0%,     1);
+    --white:     #fff;
+    --grey-50:   #f9fafb;
+    --grey-100:  #f3f4f6;
+    --grey-200:  #e5e7eb;
+    --grey-300:  #d1d5db;
+    --grey-400:  #9ca3af;
+    --grey-500:  #6b7280;
+    --grey-600:  #4b5563;
+    --grey-700:  #374151;
+    --grey-800:  #1f2937;
+    --grey-900:  #111827;
+    --black:     #000;
+    --white-050: rgb(255 255 255 / 50%);
+    --black-050: rgb(0   0   0   / 50%);
   }
 
   *,
@@ -57,6 +59,7 @@
     -webkit-text-size-adjust: 100%;
             text-size-adjust: 100%;
     color: var(--text-color);
+    text-shadow: 0 0.0625rem 0.25rem var(--text-shadow-color);
     cursor: default;
     -webkit-tap-highlight-color: transparent;
   }
@@ -75,12 +78,14 @@
   }
 
   ::-moz-selection {
-    background: #b3d4fc;
+    background: var(--highlight-background-color);
+    color: var(--highlight-text-color);
     text-shadow: none;
   }
 
   ::selection {
-    background: #b3d4fc;
+    background: var(--highlight-background-color);
+    color: var(--highlight-text-color);
     text-shadow: none;
   }
 
@@ -380,7 +385,10 @@
   
   @media (prefers-color-scheme: light) {
     --background-color: var(--grey-50);
-    --text-color: var(--grey-800);
+    --text-color: var(--grey-900);
+    --text-shadow-color: var(--white-050);
+    --highlight-background-color: var(--grey-900);
+    --highlight-text-color: var(--grey-50);
   }
 
 
@@ -392,7 +400,9 @@
   @media (prefers-color-scheme: light) and (prefers-contrast: more) {
     :root {
       --background-color: var(--white);
-      --text-color: var(--grey-900);
+      --text-color: var(--black);
+      --highlight-background-color: var(--black);
+      --highlight-text-color: var(--white);
     }
   }
 
@@ -406,6 +416,9 @@
     :root {
       --background-color: var(--grey-900);
       --text-color: var(--grey-50);
+      --text-shadow-color: var(--black-050);
+      --highlight-background-color: var(--grey-50);
+      --highlight-text-color: var(--grey-900);
     }
   }
 
@@ -419,6 +432,8 @@
     :root {
       --background-color: var(--black);
       --text-color: var(--white);
+      --highlight-background-color: var(--white);
+      --highlight-text-color: var(--black);
     }
   }
 
@@ -502,7 +517,7 @@
     }
 
     blockquote {
-      border: 1px solid #999;
+      border: 1px solid currentColor;
     }
   }
 <style>
