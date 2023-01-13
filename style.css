@@ -265,14 +265,12 @@
 
 
   /* ---------------------------------------------------------------------------
-   * Webflow Resets
+   * Layout Components
    */
 
-  .w-richtext:before,
-  .w-richtext:after,
-  .w-embed:before,
-  .w-embed:after {
-    display: none;
+  .region {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
 
@@ -281,9 +279,12 @@
    * Visibility
    */
 
-  .hidden,
-  [hidden] {
-    display: none !important;
+  .w-richtext:before,
+  .w-richtext:after,
+  .w-embed:before,
+  .w-embed:after,
+  .hidden {
+    display: none;
   }
 
   .visually-hidden {
