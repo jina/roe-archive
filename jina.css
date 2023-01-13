@@ -5,4 +5,10 @@
   --background-repeat: repeat;
 
   --font-family: Fraunces, serif;
+
+  --text-shadow-color: var(--transparent-white);
+}
+
+.theme-dark {
+  --text-shadow-color: var(--transparent-black);
 }
