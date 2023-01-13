@@ -147,6 +147,10 @@
     overflow: auto;
   }
 
+  figure {
+    display: flex !important;
+  }
+
   audio,
   canvas,
   iframe,
