@@ -94,6 +94,22 @@
     font-variation-settings: 'opsz' 48, 'SOFT' 0, 'WONK' 0;
   }
 
+  h2 {
+    font-variation-settings: 'OPSZ' 36, 'SOFT' 0, 'WONK' 0;
+  }
+
+  h3 {
+    font-variation-settings: 'OPSZ' 24, 'SOFT' 0, 'WONK' 0;
+  }
+
+  h4 {
+    font-variation-settings: 'OPSZ' 20, 'SOFT' 0, 'WONK' 0;
+  }
+
+  h5 {
+    font-variation-settings: 'OPSZ' 18, 'SOFT' 0, 'WONK' 0;
+  }
+
   ul,
   li {
     list-style: none;
@@ -223,11 +239,19 @@
     h1 {
       font-variation-settings: 'OPSZ' 56, 'SOFT' 0, 'WONK' 0;
     }
+    
+    h2 {
+      font-variation-settings: 'OPSZ' 40, 'SOFT' 0, 'WONK' 0;
+    }
   }
 
   @media only screen and (min-width: 40em) {
     h1 {
       font-variation-settings: 'OPSZ' 64, 'SOFT' 0, 'WONK' 0;
+    }
+    
+    h2 {
+      font-variation-settings: 'OPSZ' 48, 'SOFT' 0, 'WONK' 0;
     }
   }
   
