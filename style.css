@@ -226,6 +226,12 @@
     outline: 1px dotted ButtonText;
   }
 
+  .button,
+  .button-stateful,
+  .icon {
+    display: inline-flex;
+  }
+
   .feature-image {
     aspect-ratio: 16 / 9;
   }
