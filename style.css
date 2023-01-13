@@ -113,6 +113,10 @@
     -webkit-appearance: button;
   }
 
+  .w--current {
+    pointer-events: none;
+  }
+
   @media (prefers-reduced-motion: reduce) {
     *,
     ::before,
