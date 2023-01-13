@@ -159,14 +159,19 @@
    * Media
    */
 
-  figure {
-    display: flex !important;
-  }
-
   img {
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+  }
+
+  figure {
+    display: flex !important;
+  }
+
+  .w-richtext figure.w-richtext-align-center {
+    margin-left: 0;
+    max-width: 50rem;
   }
 
   .icon {
