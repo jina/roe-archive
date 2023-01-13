@@ -1,5 +1,6 @@
 @import url('shared/global.css');
 
 ::root {
+  /* Typography */
   --font-family: Recursive, sans-serif;
 }
