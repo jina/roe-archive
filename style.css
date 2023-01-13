@@ -1,5 +1,4 @@
 <style>
-
   /* ---------------------------------------------------------------------------
    * Imports
    */
@@ -12,6 +11,21 @@
   /* ---------------------------------------------------------------------------
    * Root
    */
+
+  :root {
+    --white:    hsla(0,       0%,     100%,   1);
+    --grey-50:  hsla(210,     20%,    98.04%, 1);
+    --grey-100: hsla(220,     14.29%, 95.88%, 1);
+    --grey-200: hsla(220,     13.04%, 90.98%, 1);
+    --grey-300: hsla(216,     12.2%,  83.92%, 1);
+    --grey-400: hsla(217.895, 10.61%, 64.9%,  1);
+    --grey-500: hsla(220,     8.94%,  46.08%, 1);
+    --grey-600: hsla(215,     13.79%, 34.12%, 1);
+    --grey-700: hsla(216.923, 19.12%, 26.67%, 1);
+    --grey-800: hsla(215,     27.91%, 16.86%, 1);
+    --grey-900: hsla(220.909, 39.29%, 10.98%, 1);
+    --black:    hsla(0,       100%,   0%,     1);
+}
 
   *,
   ::before,
@@ -32,15 +46,15 @@
     font: normal normal 100%/1.5 Fraunces, Georgia, serif;
     font-optical-sizing: auto;
     font-variation-settings: "opsz" 16, "SOFT" 0, "WONK" 0;
-    -webkit-font-smoothing: antialiased;
+     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
     vertical-align: baseline;
     overflow-wrap: break-word;
     -moz-tab-size: 4;
-    tab-size: 4;
+         tab-size: 4;
     -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
+            text-size-adjust: 100%;
     cursor: default;
     -webkit-tap-highlight-color: transparent;
   }
@@ -50,6 +64,9 @@
   }
 
   body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     overflow-x: hidden;
     font-size: 1rem;
   }
@@ -192,7 +209,7 @@
   }
 
   .page-previous .arrow-right,
-	.page-next .arrow-left {
+  .page-next     .arrow-left {
     display: none;
   }
 
