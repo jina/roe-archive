@@ -1,18 +1,3 @@
 @import url('shared/tokens.css');
-
-::root {
-  --background-image:  url("jina/noise.png");
-  --background-repeat: repeat;
-
-  --font-family: Fraunces;
-  --text-shadow-offset-y:    var(--size-1);
-  --text-shadow-blur-radius: var(--size-2);
-  --text-shadow-color:       var(--transparent-white);
-}
-
-.theme-dark {
-  --text-shadow-offset-y: var(--size-negative-1);
-  --text-shadow-color:    var(--transparent-black);
-}
-
+@import url('jina/tokens.css');
 @import url('shared/global.css');
