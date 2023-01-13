@@ -91,7 +91,7 @@
   }
 
   h1 {
-    font-variation-settings: 'opsz' 96, 'SOFT' 0, 'WONK' 0;
+    font-variation-settings: 'opsz' 48, 'SOFT' 0, 'WONK' 0;
   }
 
   ul,
@@ -217,6 +217,36 @@
     overflow: visible;
     clip: auto;
     white-space: inherit;
+  }
+
+  @media only screen and (min-width: 30em) {
+    h1 {
+      font-variation-settings: 'OPSZ' 56, 'SOFT' 0, 'WONK' 0;
+    }
+  }
+
+  @media only screen and (min-width: 40em) {
+    h1 {
+      font-variation-settings: 'OPSZ' 64, 'SOFT' 0, 'WONK' 0;
+    }
+  }
+  
+  @media only screen and (min-width: 60em) {
+    h1 {
+      font-variation-settings: 'OPSZ' 72, 'SOFT' 0, 'WONK' 0;
+    }
+  }
+
+  @media only screen and (min-width: 80em) {
+    h1 {
+      font-variation-settings: 'OPSZ' 80, 'SOFT' 0, 'WONK' 0;
+    }
+  }
+  
+  @media only screen and (min-width: 120em) {
+    h1 {
+      font-variation-settings: 'OPSZ' 96, 'SOFT' 0, 'WONK' 0;
+    }
   }
 
   @media (prefers-reduced-motion: reduce) {
