@@ -43,7 +43,7 @@
   }
 
   html {
-    background: var(--background-color);
+    background: var(--background-color) url("noise.png") repeat;
     font: normal normal 100%/1.5 Fraunces, Georgia, serif;
     font-optical-sizing: auto;
     font-variation-settings: "opsz" 16, "SOFT" 0, "WONK" 0;
