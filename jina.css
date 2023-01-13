@@ -1,11 +1,9 @@
 @import url('shared/global.css');
 
 ::root {
-  /* Box */
   --background-image: url("jina/noise.png");
   --background-repeat: repeat;
 
-  /* Typography */
   --font-family: Fraunces, serif;
   --text-shadow-offset-y:    var(--size-1);
   --text-shadow-blur-radius: var(--size-2);
@@ -13,7 +11,6 @@
 }
 
 .theme-dark {
-  /* Typography */
   --text-shadow-offset-y: var(--size-negative-1);
   --text-shadow-color:    var(--transparent-black);
 }
