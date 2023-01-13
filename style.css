@@ -20,7 +20,6 @@
 
   html {
     font: normal 400 100%/1.5 Fraunces, Georgia, serif;
-    font-variation-settings: 'opsz' 16, 'SOFT' 0, 'WONK' 0;
     font-optical-sizing: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -33,6 +32,12 @@
     text-size-adjust: 100%;
     cursor: default;
     -webkit-tap-highlight-color: transparent;
+  }
+
+  html,
+  h6,
+  .h6 {
+    font-variation-settings: 'opsz' 16, 'SOFT' 0, 'WONK' 0;
   }
 
   html:focus-within {
@@ -90,23 +95,28 @@
     display: block;
   }
 
-  h1 {
+  h1,
+  .h1 {
     font-variation-settings: 'opsz' 48, 'SOFT' 0, 'WONK' 0;
   }
 
-  h2 {
+  h2,
+  .h2 {
     font-variation-settings: 'OPSZ' 36, 'SOFT' 0, 'WONK' 0;
   }
 
-  h3 {
+  h3,
+  .h3 {
     font-variation-settings: 'OPSZ' 24, 'SOFT' 0, 'WONK' 0;
   }
 
-  h4 {
+  h4,
+  .h4 {
     font-variation-settings: 'OPSZ' 20, 'SOFT' 0, 'WONK' 0;
   }
 
-  h5 {
+  h5,
+  .h5 {
     font-variation-settings: 'OPSZ' 18, 'SOFT' 0, 'WONK' 0;
   }
 
