@@ -1,9 +1,6 @@
 @import url('assets/css/webflow.css');
 
-body {
-  font-family: Gantari, sans-serif;
-}
-
-h2 {
-  font-family: Montserrat, sans-serif;
+::root {
+  --font-family: Gantari, sans-serif;
+  --h2-font-family: Montserrat, sans-serif;
 }
