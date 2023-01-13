@@ -90,6 +90,10 @@
     display: block;
   }
 
+  h1 {
+    font-variation-settings: 'opsz' 96, 'SOFT' 0, 'WONK' 0;
+  }
+
   ul,
   li {
     list-style: none;
