@@ -1,6 +1,6 @@
 @import "tokens.css";
 
-::root {
+:root {
   --background-image:  url("noise.png");
   --background-repeat: repeat;
 
