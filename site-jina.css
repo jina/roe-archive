@@ -1,4 +1,5 @@
 @import "tokens.css";
+@import "site.css";
 
 :root {
   --background-image:  url("noise.png");
@@ -14,5 +15,3 @@
   --text-shadow-offset-y: var(--size-negative-1);
   --text-shadow-color:    var(--transparent-black);
 }
-
-@import "site.css";
