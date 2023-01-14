@@ -20,5 +20,7 @@
 
 .theme-high-contrast-light,
 .theme-high-contrast-dark {
-  text-shadow: none;
+  --text-shadow-offset-y:    0;
+  --text-shadow-blur-radius: 0;
+  --text-shadow-color:       var(--transparent);
 }
