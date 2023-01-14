@@ -5,12 +5,20 @@
   --background-repeat: repeat;
 
   --font-family: Fraunces;
-  --text-shadow-offset-y:    var(--size-1);
   --text-shadow-blur-radius: var(--size-2);
-  --text-shadow-color:       var(--transparent-white);
+}
+
+.theme-light {
+  --text-shadow-offset-y: var(--size-1);
+  --text-shadow-color:    var(--transparent-white);
 }
 
 .theme-dark {
   --text-shadow-offset-y: var(--size-negative-1);
   --text-shadow-color:    var(--transparent-black);
+}
+
+.theme-high-contrast-light,
+.theme-high-contrast-dark {
+  text-shadow: none;
 }
