@@ -110,6 +110,16 @@ h2 {
   font-family: var(--font-family-display);
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+li::before {
+  float: left;
+  content: "\200B";
+}
+
 .logotype {
   font-variation-settings: var(--font-variation-settings-display);
 }
@@ -128,6 +138,11 @@ h2 {
   padding: .75rem 1rem;
   column-gap: .5rem;
   row-gap:    .25rem;
+}
+
+.longform-text p,
+.longform text li {
+  line-height: 1.75;
 }
 
 .w--current {
