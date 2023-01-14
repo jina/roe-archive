@@ -21,12 +21,7 @@
   --size-negative-1: -0.0625rem;
   --size-negative-2: -0.125rem;
 
-  --background-color:         var(--white);
-  --background-color-inverse: var(--grey-9);
-
   --font-family: sans-serif;
-  --text-color:         var(--grey-6);
-  --text-color-inverse: var(--grey-3);
   --text-shadow-offset-x:    0;
   --text-shadow-offset-y:    0;
   --text-shadow-blur-radius: 0;
@@ -113,11 +108,17 @@ h2 {
   color: var(--text-color);
 }
 
-/* @media (prefers-color-scheme: light) { }
+/* @media (prefers-color-scheme: light) { } */
 
-.theme-light { }
+.theme-light {
+  --background-color:         var(--white);
+  --background-color-inverse: var(--grey-9);
+  
+  --text-color:         var(--grey-6);
+  --text-color-inverse: var(--grey-3);
+}
 
-@media (prefers-color-scheme: dark) { } */
+/* @media (prefers-color-scheme: dark) { } */
 
 .theme-dark {
   --background-color:         var(--grey-9);
@@ -130,13 +131,19 @@ h2 {
 /* @media (prefers-color-scheme: light) and (prefers-contrast: more) { } */
 
 .theme-high-contrast {
+  --background-color:         var(--white);
   --background-color-inverse: var(--black);
-
-  --text-color: var(--black);
+  
+  --text-color:         var(--black);
+  --text-color-inverse: var(--white);
 }
 
 /* @media (prefers-color-scheme: dark) and (prefers-contrast: more) { } */
 
 .theme-high-contrast-dark {
-  --background-color: var(--black);
+  --background-color:         var(--black);
+  --background-color-inverse: var(--white);
+  
+  --text-color:         var(--white);
+  --text-color-inverse: var(--black);
 }
