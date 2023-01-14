@@ -1,6 +1,6 @@
 @import "tokens.css";
 
-::root {
+[data-wf-domain="roe-ds.webflow.io"] {
   --background-image:  url("noise.png");
   --background-repeat: repeat;
 
@@ -8,11 +8,11 @@
   --text-shadow-offset-y:    var(--size-1);
   --text-shadow-blur-radius: var(--size-2);
   --text-shadow-color:       var(--transparent-white);
-}
-
-.theme-dark {
-  --text-shadow-offset-y: var(--size-negative-1);
-  --text-shadow-color:    var(--transparent-black);
+  
+  .theme-dark {
+    --text-shadow-offset-y: var(--size-negative-1);
+    --text-shadow-color:    var(--transparent-black);
+  }
 }
 
 @import "site.css";
