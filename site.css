@@ -105,6 +105,14 @@ h2 {
   font-family: var(--font-family-display);
 }
 
+.theme-light,
+.theme-high-contrast,
+.theme-dark,
+.theme-high-contrast-dark {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
 /* @media (prefers-color-scheme: light) { }
 
 .theme-light { }
