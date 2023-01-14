@@ -5,6 +5,7 @@
   --background-repeat: repeat;
 
   --font-family: Fraunces;
+  --font-variation-settings-display: "WONK" 1;
   --text-shadow-offset-y:    var(--size-1);
   --text-shadow-blur-radius: var(--size-2);
   --text-shadow-color:       var(--transparent-white);
