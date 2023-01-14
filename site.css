@@ -114,6 +114,26 @@ h2 {
   font-variation-settings: var(--font-variation-settings-display);
 }
 
+.link-button,
+.faux-button,
+.button-group {
+  display: inline-flex;
+  align-items: center;
+  min-width:  3rem;
+  min-height: 3rem;
+}
+
+.link-button,
+.faux-button {
+  padding: .75rem 1rem;
+  column-gap: .5rem;
+  row-gap:    .25rem;
+}
+
+.w--current {
+  pointer-events: none;
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color:         var(--grey-9);
