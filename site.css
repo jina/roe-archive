@@ -49,28 +49,12 @@
 }
 
 html {
-  background-color: var(--background-color);
-  background-image: var(--background-image);
-  background-repeat: var(--background-repeat);
   font-size: 100%;
-  line-height: 1.5;
-  font-family: var(--font-family);
-  text-rendering: optimizeLegibility;
-  vertical-align: baseline;
-  overflow-wrap: break-word;
-   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   -moz-tab-size: 4;
        tab-size: 4;
   -webkit-text-size-adjust: 100%;
           text-size-adjust: 100%;
-  color: var(--text-color);
-  text-shadow: var(--text-shadow-offset-x) 
-               var(--text-shadow-offset-y) 
-               var(--text-shadow-blur-radius) 
-               var(--text-shadow-color);
   -webkit-tap-highlight-color: transparent;
-  cursor: default;
 }
 
 html:focus-within {
@@ -81,7 +65,24 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-repeat: var(--background-repeat);
   overflow-x: hidden;
+  overflow-wrap: break-word;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-family: var(--font-family);
+  text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  vertical-align: baseline;
+  color: var(--text-color);
+  text-shadow: var(--text-shadow-offset-x) 
+               var(--text-shadow-offset-y) 
+               var(--text-shadow-blur-radius) 
+               var(--text-shadow-color);
+  cursor: default;
 }
 
 ::-moz-selection {
