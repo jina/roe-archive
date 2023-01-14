@@ -1,8 +1,7 @@
 /* @import "tokens.css";
+@import "site.css";
 
 :root {
   --font-family:         Gantari;
   --font-family-display: Montserrat;
-}
-
-@import "site.css"; */
+} */
