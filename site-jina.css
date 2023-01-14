@@ -1,6 +1,6 @@
 @import "tokens.css";
 
-[data-wf-domain="roe-ds.webflow.io"] {
+html {
   --background-image:  url("noise.png");
   --background-repeat: repeat;
 
