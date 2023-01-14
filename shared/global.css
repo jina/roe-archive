@@ -20,7 +20,6 @@ html {
   font-size: 100%;
   line-height: 1.5;
   font-family: var(--font-family);
-  font-optical-sizing: auto;
   text-rendering: optimizeLegibility;
   vertical-align: baseline;
   overflow-wrap: break-word;
