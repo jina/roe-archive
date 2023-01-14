@@ -113,7 +113,7 @@ h2 {
   --text-color-inverse: var(--grey-6);
 }
 
-@media (prefers-color-scheme: light) and (prefers-contrast: more) {
+@media (prefers-contrast: more) {
   --background-color:         var(--white);
   --background-color-inverse: var(--black);
   
