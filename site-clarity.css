@@ -1,3 +1,8 @@
 /* @import "tokens.css";
-@import "tokens-clarity.css";
+
+::root {
+  --font-family:         Gantari;
+  --font-family-display: Montserrat;
+}
+
 @import "site.css"; */
