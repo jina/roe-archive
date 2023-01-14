@@ -24,7 +24,7 @@
   --background-color:         var(--white);
   --background-color-inverse: var(--grey-9);
 
-  --font-family: sans-serif; 
+  --font-family: sans-serif;
   --text-color:         var(--grey-6);
   --text-color-inverse: var(--grey-3);
   --text-shadow-offset-x:    0;
@@ -73,6 +73,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   font-family: var(--font-family);
+  font-variation-settings: var(--font-variation-settings);
   text-rendering: optimizeLegibility;
    -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -103,6 +104,10 @@ strong {
 
 h2 {
   font-family: var(--font-family-display);
+}
+
+.logotype {
+  font-variation-settings: var(--font-variation-settings-display);
 }
 
 @media (prefers-color-scheme: dark) {
