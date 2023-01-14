@@ -33,6 +33,10 @@
   --text-shadow-color:       var(--transparent);
 }
 
+/* ---------------------------------------------------------------------------
+ * Root
+ */
+
 *,
 ::before,
 ::after {
@@ -98,9 +102,37 @@ body {
   text-shadow: none;
 }
 
+/* ---------------------------------------------------------------------------
+ * Links
+ */
+
 a {
   text-decoration-skip-ink: auto;
 }
+
+.link-button,
+.faux-button,
+.button-group {
+  display: inline-flex;
+  align-items: center;
+  min-width:  3rem;
+  min-height: 3rem;
+}
+
+.link-button,
+.faux-button {
+  padding: .75rem 1rem;
+  column-gap: .5rem;
+  row-gap:    .25rem;
+}
+
+.w--current {
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------------------------
+ * Typography
+ */
 
 strong {
   font-weight: bolder;
@@ -124,30 +156,35 @@ li::before {
   font-variation-settings: var(--font-variation-settings-display);
 }
 
-.link-button,
-.faux-button,
-.button-group {
-  display: inline-flex;
-  align-items: center;
-  min-width:  3rem;
-  min-height: 3rem;
-}
-
-.link-button,
-.faux-button {
-  padding: .75rem 1rem;
-  column-gap: .5rem;
-  row-gap:    .25rem;
-}
-
 .longform-text p,
 .longform text li {
   line-height: 1.75;
 }
 
-.w--current {
-  pointer-events: none;
+/* ---------------------------------------------------------------------------
+ * Media
+ */
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
+
+figure {
+  display: flex !important;
+}
+
+.w-richtext figure.w-richtext-align-center {
+  margin-left: 0;
+  max-width: 50rem;
+}
+
+  .icon {    display: inline-flex;  }
+
+/* ---------------------------------------------------------------------------
+ * Dark Theme
+ */
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -159,6 +196,10 @@ li::before {
   }
 }
 
+/* ---------------------------------------------------------------------------
+ * High Contrast Theme
+ */
+
 @media (prefers-contrast: more) {
   :root {
     --background-color:         var(--white);
@@ -168,6 +209,10 @@ li::before {
     --text-color-inverse: var(--white);
   }
 }
+
+/* ---------------------------------------------------------------------------
+ * High Contrast Dark Theme
+ */
 
 @media (prefers-color-scheme: dark) and (prefers-contrast: more) {
   :root {
