@@ -1,3 +1,7 @@
 /* @import "tokens.css";
-@import "tokens-ds.css";
+
+::root {
+  --font-family: Recursive;
+}
+
 @import "site.css"; */
