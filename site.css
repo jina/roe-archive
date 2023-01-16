@@ -244,6 +244,15 @@ button:-moz-focusring {
  * Layouts
  */
 
+.container,
+.region {
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+}
+
 .flush {
   margin-right: -1rem;
   margin-left: -1rem;
@@ -252,7 +261,6 @@ button:-moz-focusring {
 .region {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  width: 100%;
 }
 
 .spread {
@@ -295,6 +303,36 @@ button:-moz-focusring {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
 }
+
+/* ---------------------------------------------------------------------------
+ * 480 & Up
+ */
+
+@media only screen and (min-width: 30em) {}
+
+/* ---------------------------------------------------------------------------
+ * 640 & Up
+ */
+
+@media only screen and (min-width: 40em) {}
+
+/* ---------------------------------------------------------------------------
+ * 960 & Up
+ */
+
+@media only screen and (min-width: 60em) {}
+
+/* ---------------------------------------------------------------------------
+ * 1280 & Up
+ */
+
+@media only screen and (min-width: 80em) {}
+
+/* ---------------------------------------------------------------------------
+ * 1920 & Up
+ */
+
+@media only screen and (min-width: 120) {}
 
 /* ---------------------------------------------------------------------------
  * Dark Theme
