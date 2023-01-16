@@ -210,6 +210,36 @@ textarea {
   height: auto;
 }
 
+input,
+button {
+  overflow: visible;
+}
+
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.625;
+}
+
+button {
+  -webkit-appearance: button;
+  display: inline-flex;
+  text-transform: none;
+}
+
+button::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
 /* ---------------------------------------------------------------------------
  * Dark Theme
  */
