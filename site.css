@@ -125,4 +125,12 @@ figure,
   padding-bottom: 3rem;
 }
 
+.container {
+  margin-right: auto;
+  margin-left:  auto;
+  padding-right: 2rem;
+  padding-left:  2rem;
+  max-width: 120rem;
+}
+
 .site-main { justify-content: center; }
