@@ -79,6 +79,16 @@ blockquote { border: 0; }
 html { font-size: 100%; }
 
 body,
+figure,
+.w-richtext figure.w-richtext-figure-type-image,
+.w-richtext figure.w-richtext-align-fullwidth,
+.w-richtext figure[data-rt-type="image"],
+.site-main { 
+  display: flex;
+  flex-direction: column;
+}
+
+body,
 sup { vertical-align: baseline; }
 
 body,
@@ -101,15 +111,6 @@ p,
 li { line-height: 1.75; }
 
 blockquote { font-size: 1.5em; }
-
-figure,
-.w-richtext figure.w-richtext-figure-type-image,
-.w-richtext figure.w-richtext-align-fullwidth,
-.w-richtext figure[data-rt-type="image"],
-.site-main { 
-  display: flex;
-  flex-direction: column;
-}
 
 .w-richtext::before,
 .w-richtext::after { display: none; }
