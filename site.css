@@ -117,10 +117,10 @@ strong { font-weight: bolder; }
 
 em { font-style: italic; }
 
-p,
-li { line-height: 1.75; }
-
 blockquote { font-size: 1.5em; }
+
+ul,
+ol { list-style: none; }
 
 .w-richtext::before,
 .w-richtext::after { display: none; }
@@ -131,6 +131,12 @@ blockquote { font-size: 1.5em; }
 
 .w-richtext figure.w-richtext-align-floatright { margin-left: 2rem; }
 
+.logotype {}
+
+.prose p,
+.prose li { line-height: 1.75; }
+
+.faux-button,
 .link-button {
   display: inline-flex;
   align-items: center;
