@@ -111,3 +111,7 @@ figure,
 .w-richtext::after { display: none; }
 
 .w-richtext figure { max-width: 50em; }
+
+.w-richtext figure.w-richtext-align-floatleft { margin-right: 2rem; }
+
+.w-richtext figure.w-richtext-align-floatright { margin-left: 2rem; }
