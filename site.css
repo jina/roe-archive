@@ -83,8 +83,18 @@ figure,
 .w-richtext figure.w-richtext-figure-type-image,
 .w-richtext figure.w-richtext-align-fullwidth,
 .w-richtext figure[data-rt-type="image"],
-.site-main { 
+.spread,
+.site-main {
   display: flex;
+}
+
+body,
+figure,
+.w-richtext figure.w-richtext-figure-type-image,
+.w-richtext figure.w-richtext-align-fullwidth,
+.w-richtext figure[data-rt-type="image"],
+.spread,
+.site-main {
   flex-direction: column;
 }
 
@@ -139,4 +149,15 @@ blockquote { font-size: 1.5em; }
   margin-left:  -1rem;
 }
 
+.spread { row-gap: 1.5rem; }
+
 .site-main { justify-content: center; }
+
+ @media only screen and (min-width: 60em) {
+  .spread {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    column-gap: 2rem;
+  }
+}
