@@ -136,6 +136,7 @@ blockquote { font-size: 1.5em; }
   align-items: center;
   column-gap: .5rem;
      row-gap: .25rem;
+  padding: .75rem 1rem;
   min-width:  3rem;
   min-height: 3rem;
 }
