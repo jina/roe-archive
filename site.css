@@ -1,1 +1,15 @@
+:root { --font-family: sans-serif; }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
+  font-family: var(--font-family);
+}
