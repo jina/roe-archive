@@ -43,3 +43,6 @@ body {
   font-family: var(--font-family);
   color: var(--text-color);
 }
+
+.w-richtext::before,
+.w-richtext::after { display: none; }
