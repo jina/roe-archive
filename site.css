@@ -18,14 +18,20 @@
 
 *,
 ::before,
-::after {
-  box-sizing: border-box;
+::after,
+h1 {
   margin: 0;
-  background: transparent;
-  font-style:  inherit;
   font-weight: inherit;
   font-size:   inherit;
   line-height: inherit;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  background: transparent;
+  font-style:  inherit;
   font-family: inherit;
   color:       inherit;
 }
