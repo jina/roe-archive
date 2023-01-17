@@ -105,7 +105,11 @@ blockquote { font-size: 1.5em; }
 figure,
 .w-richtext figure.w-richtext-figure-type-image,
 .w-richtext figure.w-richtext-align-fullwidth,
-.w-richtext figure[data-rt-type="image"] { display: flex; }
+.w-richtext figure[data-rt-type="image"],
+.site-main { 
+  display: flex;
+  flex-direction: column;
+}
 
 .w-richtext::before,
 .w-richtext::after { display: none; }
@@ -115,3 +119,10 @@ figure,
 .w-richtext figure.w-richtext-align-floatleft { margin-right: 2rem; }
 
 .w-richtext figure.w-richtext-align-floatright { margin-left: 2rem; }
+
+.region {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.site-main { justify-content: center; }
